@@ -1,0 +1,58 @@
+
+:root {
+  --cl-background: #fbfbfb;
+  --cl-light: #faecf3;
+  --cl-text: #383d3b;
+  --cl-item: #5c5d8d;
+  --cl-item-bg: #f0f0f4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: content-box;
+  font-family: "Heebo", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5em;
+  
+}
+
+html {
+  color: var(--cl-text);
+  background-color: var(--cl-background);
+}
+
+.conteudo {
+  width: 60%;
+}
+
+.form {
+  display: flex;
+}
+
+input.form__input { 
+  padding: 0.2em 0.4em;
+  width: 17em; /*corrigir o placeholder*/
+  margin-left: 45.0em; /*centralizar o input*/
+}
+
+.form__submit {
+  margin: 0.1em;
+}
+
+/*centralizar o container apos pesquisa*/
+.repositorios {
+  width: 50em; 
+  float: right;
+  position: relative;
+  left: 17%;
+}
+
+.repositorios li {
+  color: var(--cl-item);
+  padding: 0.5em;
+  margin-bottom: 0.2em;
+  background-color: var(--cl-item-bg); /*dar a cor do background da lista*/
+  list-style-type: none; /*para remover a decoração da lista*/
+}
